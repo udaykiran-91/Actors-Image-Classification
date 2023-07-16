@@ -1,6 +1,6 @@
 # Actors-Image-Classification-project
 
-## video
+## Video of Project Working
 [Link to Video](https://drive.google.com/file/d/10PXfhcs0d6CsrKZY57AYtO0B8wD6HhcB/view?usp=sharing)
 
 

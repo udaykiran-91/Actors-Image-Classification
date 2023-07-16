@@ -10,6 +10,7 @@
 ### Saved model pickle file has been uploaded into drive as there is a size limit for uploading files into GitHub
 [Link to pickle file](https://drive.google.com/file/d/1q03tPi2UtUAGvBOzcl5f_mWilA941cLH/view?usp=sharing)
 
+<br><br><br>
 
 ## Home page when No image is uploaded
 

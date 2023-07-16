@@ -3,14 +3,14 @@
 ## Video of Project Working
 [Link to Video](https://drive.google.com/file/d/10PXfhcs0d6CsrKZY57AYtO0B8wD6HhcB/view?usp=sharing)
 
-
+<br>
 
 
 ## Pickle File link
 ### Saved model pickle file has been uploaded into drive as there is a size limit for uploading files into GitHub
 [Link to pickle file](https://drive.google.com/file/d/1q03tPi2UtUAGvBOzcl5f_mWilA941cLH/view?usp=sharing)
 
-<br><br><br>
+<br><br>
 
 ## Home page when No image is uploaded
 

@@ -1,0 +1,284 @@
+{% extends 'main.html' %}
+{% load static %}
+
+{% block content%}
+
+
+
+
+<div class="container">
+    <div class="row" style="padding: 35px;">
+
+        <div class="col card-wrapper" data-player="prabhas">
+            <div class="card border-0">
+                <div class="position-relative rounded-circle overflow-hidden mx-auto custom-circle-image">
+                    <img class="w-100 h-100" src="{% static 'images/prabhas.jpg' %}" alt="Card image cap">
+                </div>
+                <div class="card-body text-center mt-4">
+                    <h4 class="text-uppercase card-title">&nbsp;&nbsp;Prabhas &nbsp;&nbsp;</h4>
+                </div>
+            </div>
+        </div>
+
+        <div class="col card-wrapper" data-player="anushka">
+            <div class="card border-0">
+                <div class="position-relative rounded-circle overflow-hidden mx-auto custom-circle-image">
+                    <img class="w-100 h-100" src="{% static 'images/anushka.jpg' %}" alt="Card image cap">
+                </div>
+                <div class="card-body text-center mt-4">
+                    <h4 class="text-uppercase card-title">Anushka Shetty</h4>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col card-wrapper" data-player="dhanush">
+            <div class="card border-0">
+                <div class="position-relative rounded-circle overflow-hidden mx-auto custom-circle-image">
+                    <img class="w-100 h-100" src="{% static 'images/dhanush.jpg' %}" alt="Card image cap">
+                </div>
+                <div class="card-body text-center mt-4">
+                    <h4 class="text-uppercase card-title">Dhanush</h4>
+                </div>
+            </div>
+        </div>
+        
+
+        <div class="col card-wrapper" data-player="jennifer">
+            <div class="card border-0">
+                <div class="position-relative rounded-circle overflow-hidden mx-auto custom-circle-image">
+                    <img class="w-100 h-100" src="{% static 'images/jennifer.jpg' %}" alt="Card image cap">
+                </div>
+                <div class="card-body text-center mt-4">
+                    <h4 class="text-uppercase card-title">jennifer Lawrence</h4>
+                </div>
+            </div>
+        </div>
+
+       
+        <div class="col card-wrapper" data-player="stephen">
+            <div class="card border-0">
+                <div class="position-relative rounded-circle overflow-hidden mx-auto custom-circle-image">
+                    <img class="w-100 h-100" src="{% static 'images/stephen.jpg' %}" alt="Card image cap">
+                </div>
+                <div class="card-body text-center mt-4">
+                    <h4 class="text-uppercase card-title">&nbsp;&nbsp;Stephen &nbsp;&nbsp;Amell</h4>
+                </div>
+            </div>
+        </div>
+
+        <div class="col card-wrapper" data-player="emilia">
+                <div class="card border-0">
+                    <div class="position-relative rounded-circle overflow-hidden mx-auto custom-circle-image">
+                        <img class="w-100 h-100" src="{% static 'images/emilia.jpg' %}" alt="Card image cap">
+                    </div>
+                    <div class="card-body text-center mt-4">
+                        <h4 class="text-uppercase card-title">Emilia Clarke </h4>
+                    </div>
+                </div>
+        </div>
+
+        
+
+        
+
+        
+
+    </div>
+
+    <div class="row" style="padding: 0px 150px 50px;">
+        <div class="col-sm-4" style="margin-top:0px">
+            <div class="row">
+                <div class="col-12 mx-auto">
+                    <form method="post" action="{% url 'uploaded-pic' %}" enctype="multipart/form-data">
+                        {% csrf_token %}
+                        <input type="file" name="image" id="submitBtn" class="btn btn-success" accept="image/*" style="padding:75px 25px 75px 25px">
+                        <input type="submit" value="CLICK TO CLASSIFY YOUR SELECTED IMAGE" id="submitBtn" class="btn btn-success" style="margin-top:20px; padding:10px">
+                        
+                    </form>
+                </div>
+            </div>
+        </div>
+        {% if name == None %} 
+        <div class="col card-wrapper" data-player="none">
+            <div class="card border-0">
+                <div class="position-relative rounded-circle overflow-hidden mx-auto custom-circle-image">
+                    <img class="w-100 h-100" src="{% static 'images/icon.png' %}" alt="Card image cap">
+                </div>
+                <div class="card-body text-center mt-4">
+                    <h4 class="text-uppercase card-title"></h4>
+                    <a class="btn btn-success" style="margin-top:0px; padding:10px ;" href="{% url 'home' %}">Refresh</a>
+                </div>
+            </div>
+        </div>
+        {% else %}
+        <div class="col-sm-4" style="margin-top:0px; padding: 0px 100px;">
+            <div class="row">
+                <div class="col-12 mx-auto">
+                    <img style="max-height: 300px; max-width : 300px;" src="{% static 'uploaded_images/' %}{{name}}" alt="">
+                </div>
+                <a class="btn btn-success" style="margin-left: 50px; margin-top:30px; padding:10px;" href="{% url 'home' %}">Refresh</a>
+            </div>
+        </div>
+        {% endif %}
+        
+    </div>
+    {% for i, j in zipped_data %}
+
+    <div class="row" style="padding: 0px 50px 50px;">
+        <div class="col-sm-4"  style="margin-top:30px">
+
+            {% if i == "Prabhas" %}
+                    <div class="col card-wrapper" data-player="prabhas">
+                    <div class="card border-0">
+                        <div class="position-relative rounded-circle overflow-hidden mx-auto custom-circle-image">
+                            <img class="w-100 h-100" src="{% static 'images/prabhas.jpg' %}" alt="Card image cap">
+                        </div>
+                        <div class="">
+                            <h4 class="text-uppercase card-title" style="margin-left:80px; margin-top:20px">Prabhas</h4>
+                        </div>
+                    </div>
+                </div>
+            {% elif i == "Anushka Shetty" %}
+                <div class="col card-wrapper" data-player="anushka">
+                        <div class="card border-0">
+                            <div class="position-relative rounded-circle overflow-hidden mx-auto custom-circle-image">
+                                <img class="w-100 h-100" src="{% static 'images/anushka.jpg' %}" alt="Card image cap">
+                            </div>
+                            <div class="card-body text-center mt-4">
+                                <h4 class="text-uppercase card-title">Anushka Shetty</h4>
+                            </div>
+                        </div>
+                </div>
+            {% elif i == "Dhanush" %}
+                <div class="col card-wrapper" data-player="dhanush">
+                        <div class="card border-0">
+                            <div class="position-relative rounded-circle overflow-hidden mx-auto custom-circle-image">
+                                <img class="w-100 h-100" src="{% static 'images/dhanush.jpg' %}" alt="Card image cap">
+                            </div>
+                            <div class="card-body text-center mt-4">
+                                <h4 class="text-uppercase card-title">Dhanush</h4>
+                            </div>
+                        </div>
+                </div>
+            {% elif i == "Jennifer Lawrence" %}
+                <div class="col card-wrapper" data-player="jennifer">
+                    <div class="card border-0">
+                        <div class="position-relative rounded-circle overflow-hidden mx-auto custom-circle-image">
+                            <img class="w-100 h-100" src="{% static 'images/jennifer.jpg' %}" alt="Card image cap">
+                        </div>
+                        <div class="card-body text-center mt-4">
+                            <h4 class="text-uppercase card-title">Jennifer Lawrence</h4>
+                        </div>
+                    </div>
+                </div>
+            {% elif i == "Stephen Amell" %}
+                <div class="col card-wrapper" data-player="stephen">
+                    <div class="card border-0">
+                        <div class="position-relative rounded-circle overflow-hidden mx-auto custom-circle-image">
+                            <img class="w-100 h-100" src="{% static 'images/stephen.jpg' %}" alt="Card image cap">
+                        </div>
+                        <div class="card-body text-center mt-4">
+                            <h4 class="text-uppercase card-title" style="margin-top:-25px">Stephen Amell</h4>
+                        </div>
+                    </div>
+                </div>
+            {% elif i == "Emilia Clarke" %}
+                <div class="col card-wrapper" data-player="emilia">
+                    <div class="card border-0">
+                        <div class="position-relative rounded-circle overflow-hidden mx-auto custom-circle-image">
+                            <img class="w-100 h-100" src="{% static 'images/emilia.jpg' %}" alt="Card image cap">
+                        </div>
+                        <div class="card-body text-center mt-4">
+                            <h4 class="text-uppercase card-title" style="margin-top:-25px">Emilia Clarke</h4>
+                        </div>
+                    </div>
+                </div>
+            {% else %}
+                <div class="col card-wrapper" data-player="none">
+                    <div class="card border-0">
+                        <div class="position-relative rounded-circle overflow-hidden mx-auto custom-circle-image">
+                            <img class="w-100 h-100" src="{% static 'images/icon.png' %}" alt="Card image cap">
+                        </div>
+                        <div class="card-body text-center mt-4">
+                            <h4 class="text-uppercase card-title"></h4>
+                        </div>
+                    </div>
+                </div>
+            {% endif %}
+    
+    
+        </div>
+    
+        <div class="col-sm-4"  style="margin-top:30px">
+            <table id="classTable">
+                    <tr>
+                        <th>Actor</th>
+                        <th style="padding:0px 0px 0px 20px">Probability Score</th>
+                    </tr>
+                    <tr>
+                        <td>Prabhas</td>
+                        <td id="score_prabhas" style="padding:0px 0px 0px 60px">{{j.4}}&nbsp;{{perc}}</td>
+                    </tr>
+                    <tr>
+                        <td>Anushka Shetty</td>
+                        <td id="score_anushka" style="padding:0px 0px 0px 60px">{{j.0}}&nbsp;{{perc}}</td>
+                    </tr>
+                    <tr>
+                        <td>Dhanush</td>
+                        <td id="score_dhanush" style="padding:0px 0px 0px 60px">{{j.1}}&nbsp;{{perc}}</td>
+                    </tr>
+                    <tr>
+                        <td>Jennifer Lawrence</td>
+                        <td id="score_jennifer" style="padding:0px 0px 0px 60px">{{j.3}}&nbsp;{{perc}}</td>
+                    </tr>
+                    <tr>
+                        <td>Stephen Amell</td>
+                        <td id="score_stephen" style="padding:0px 0px 0px 60px">{{j.5}}&nbsp;{{perc}}</td>
+                    </tr>
+                    <tr>
+                        <td>Emilia Clarke</td>
+                        <td id="score_emilia" style="padding:0px 0px 0px 60px">{{j.2}}&nbsp;{{perc}}</td>
+                    </tr>
+            </table>
+        </div>
+    </div>
+    
+
+
+    {% endfor %}
+    
+   
+<!-- {{final_percentage_array}} -->
+    
+
+</div>
+
+
+{% endblock %}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <form action="{% url 'uploaded-pic' %}" method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    <input type="file" name="image">
+    <input type="submit">
+</form>
+
+
+
+{{y_predicted}} -->

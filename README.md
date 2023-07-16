@@ -5,7 +5,8 @@
 ![1](https://github.com/udaykiran-91/Actors-Image-Classification-project/assets/127354822/7c09e511-6004-40f8-b39e-e1dc7897de50)
 
 ## When an Image is uploaded
-![2](https://github.com/udaykiran-91/Actors-Image-Classification-project/assets/127354822/ac87e95b-80f0-42a1-bfa2-62cd1767160d)
+
+![2](https://github.com/udaykiran-91/Actors-Image-Classification-project/assets/127354822/f98105c4-0d48-4690-8acb-cdd8c5c3fe42)
 
 
 ![3](https://github.com/udaykiran-91/Actors-Image-Classification-project/assets/127354822/ae3c4a07-89a8-4133-b3d4-a317fca0f189)

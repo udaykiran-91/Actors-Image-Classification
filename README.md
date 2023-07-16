@@ -1,9 +1,10 @@
 # Actors-Image-Classification-project
 
-Home page when No image is uploaded
+## Home page when No image is uploaded
+
 ![1](https://github.com/udaykiran-91/Actors-Image-Classification-project/assets/127354822/7c09e511-6004-40f8-b39e-e1dc7897de50)
 
-
+## When an Image is uploaded
 ![2](https://github.com/udaykiran-91/Actors-Image-Classification-project/assets/127354822/ac87e95b-80f0-42a1-bfa2-62cd1767160d)
 
 

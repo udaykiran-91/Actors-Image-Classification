@@ -22,7 +22,7 @@
 
 ![2](https://github.com/udaykiran-91/Actors-Image-Classification-project/assets/127354822/f98105c4-0d48-4690-8acb-cdd8c5c3fe42)
 
-<br>
+
 
 ![3](https://github.com/udaykiran-91/Actors-Image-Classification-project/assets/127354822/ae3c4a07-89a8-4133-b3d4-a317fca0f189)
 

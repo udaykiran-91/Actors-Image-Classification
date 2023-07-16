@@ -2,7 +2,7 @@
 
 ## Description
 
-This project focuses on the image classification of my favorite actors, including Prabhas, Anushka, Dhanush, Jennifer Lawrence, Emilia Clarke, and Stephen Amell. By leveraging machine learning algorithms and computer vision techniques, the system can accurately identify and categorize images featuring these talented individuals. Through this project, I aim to showcase the capabilities of image classification models in recognizing and distinguishing between different actors, contributing to the advancement of computer vision research.
+This project focuses on the Image classification of my favorite actors, including Prabhas, Anushka, Dhanush, Jennifer Lawrence, Emilia Clarke, and Stephen Amell. By leveraging machine learning algorithms and computer vision techniques, the system can accurately identify and categorize images featuring these talented individuals. Through this project, I aim to showcase the capabilities of image classification models in recognizing and distinguishing between different actors, contributing to the advancement of computer vision research.
 
 
 ## Video of Project Working

@@ -10,7 +10,7 @@
 #### Saved model pickle file has been uploaded into drive as there is a size limit for uploading files into GitHub
 [Link to pickle file](https://drive.google.com/file/d/1q03tPi2UtUAGvBOzcl5f_mWilA941cLH/view?usp=sharing)
 
-
+<br>
 
 ## Home page when No image is uploaded
 
@@ -18,13 +18,13 @@
 
 <br>
 
-## When an Image is uploaded
+## When an Image with One Face is uploaded
 
-### 1 
+### 1 Page
 
 ![2](https://github.com/udaykiran-91/Actors-Image-Classification-project/assets/127354822/f98105c4-0d48-4690-8acb-cdd8c5c3fe42)
 
-<br>
+
 
 ### 2 (Scroll Down)
 
@@ -32,12 +32,18 @@
 
 <br>
 
+## When an Image with more than One Face is uploaded
+### 1 Page
+
 ![4](https://github.com/udaykiran-91/Actors-Image-Classification-project/assets/127354822/0fdc2787-c82e-4357-9a31-ad26e45ee876)
 
-<br>
+
+### 2(Scroll Down)
 
 ![5](https://github.com/udaykiran-91/Actors-Image-Classification-project/assets/127354822/8b0ad804-067b-484b-a40c-a6c94c346627)
 
-<br>
+
+
+### 3(Scroll Down)
 
 ![6](https://github.com/udaykiran-91/Actors-Image-Classification-project/assets/127354822/981446a8-2dce-431e-85f2-05fe52c2f31a)
